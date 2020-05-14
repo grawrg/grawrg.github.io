@@ -934,14 +934,14 @@ th{
 										CoPilot
 									</p>
 								</button>
+								<button class="button opIndSiz" onclick="opIndFun(27)">
+									<p class="indLinkGrey">
+										Spectrum Guide Issues
+									</p>
+								</button>
 								<button class="button opIndSiz" onclick="opIndFun(14)">
 									<p class="indLinkGrey">
 										Scope of Support
-									</p>
-								</button>
-								<button class="button opIndSiz" onclick="opIndFun(17)">
-									<p class="indLinkGrey">
-										CSI Isue Tracker
 									</p>
 								</button>
 								<button class="button opIndSiz" onclick="opIndFun(25)">
@@ -991,6 +991,11 @@ th{
 								<button class="button opIndSiz" onclick="opIndFun(24)">
 									<p class="indLinkGrey">
 										Sports Broadcasts
+									</p>
+								</button>
+								<button class="button opIndSiz" onclick="opIndFun(17)">
+									<p class="indLinkGrey">
+										CSI Isue Tracker
 									</p>
 								</button>
 								<button class="button opIndSiz" onclick="opIndFun(15)">
@@ -3191,6 +3196,9 @@ function opIndFun(X){
   }
   if (X===26){
     var APMD = window.open("https://www.spectrum.net/support/internet/compliant-modems-charter-network/");
+  }
+  if (X===27){
+    var SGKI = window.open("https://verbatim.spectrumtoolbox.com/");
   }
   setTimeout(goBack, 150);
 }
