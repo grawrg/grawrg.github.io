@@ -20,6 +20,17 @@ body{
 	margin-top:0;
 	padding-left: 0px;
 }
+.NotChrome{
+	top:0;
+	left: 0;
+	position: absolute;
+	padding: 200px;
+	width: 1000000px;
+	height: 1000000px;
+	background-color: white;
+	color: black;
+	z-index: 100000;
+}
 .autoWid{
 	width:450px;
 }
@@ -872,7 +883,7 @@ th{
 }
 	</style>
 	
-	<title>Cheats</title>
+	<title>Cheats</title> 
 		<div id="navBar" class="NavBox">
 			<p class="NavSpace"></p>
 			<p class="miniTitText2">Navigation</p>
@@ -2763,9 +2774,16 @@ CCI to <span class="purple t14">confirm tech</span>.
 		</div>
 		<div id="copTemp" class="opWinDiv" style="width:10%">
 			<textarea type="text" value="X" id="myInput" style="width:10%" cols="400" rows="10"></textarea>
-		</div>   
+		</div>
+		<div id="NotChrome" class="NotChrome">
+			MUST USE GOOGLE CHROME TO RUN THIS
+		</div>  
 <script>
 function onLoadBody(){
+	if (navigator.userAgent.indexOf("Chrome") !== -1){
+		console.log("ITS JOHNNY");
+		document.getElementById("NotChrome").style.visibility = "hidden";
+	}
 		//var win = window.open(
 			//"https://panorama.charter.com/home", 
 			//"Secure Payment");
@@ -3316,7 +3334,7 @@ function opIndFun(X){
     var Stores = window.open("https://www.spectrum.com/stores");
   }
   if (X===5){
-    var GuideRep = window.open("https://navigator.prd-aws.charter.net/spectrum_navigator/portal/index.php");
+    var GuideRep = window.open("https://navigator.prd-aws.charter.net/spectrum_navigator/portal/index.php ");
   }
   if (X===6){
     var Iguide = window.open("I-Guide.pdf");
@@ -3518,7 +3536,7 @@ let stopwatch = new Stopwatch(
     document.querySelector('.results'));
 </script>
 	<div class="footer">
-		Version 2.5.16.20.23.20
+		Version 2.5.16.20.23.55
 	</div>
 	</body>
 </html>
