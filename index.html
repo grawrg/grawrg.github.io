@@ -908,6 +908,7 @@ th{
 					<div class="dropdown-content">
 						<a href="#systTemp">System Issues</a>
 						<a href="#outgTemp">Outages</a>
+						<a href="#aatLink">AAT Templates</a>
 						<a href="#irisTemp">IRIS Issues</a>
 					</div>
 				</div>
@@ -917,7 +918,6 @@ th{
 					<button class="dropbtn NavButBackPurple"><p class="NavColorA">Other Things</p></button>
 					<div class="dropdown-content">
 						<a href="#coMods">COModem Codes</a>
-						<a href="#aatLink">Lead Chats</a>
 						<a href="#phoAlph">Phonetic Alphabet</a>
 						<a href="#csiHT">#CSI Hastags</a>
 					</div>
@@ -1009,6 +1009,11 @@ th{
 								<a href="#systTemp">
 									<button class="button ImportantBoxButton IBRed" onclick="">
 										System Issue Template
+									</button>
+								</a>
+								<a href="#aatLink">
+									<button class="button ImportantBoxButton IBRed" onclick="">
+										AAT Templates
 									</button>
 								</a>
 							</p>
@@ -2303,8 +2308,8 @@ CCI to <span class="purple t14">confirm tech</span>.
 			<div id="aatLink" class="opIndDiv2">
 				<div id="dispAAT" class="opWinDiv">
 					<div>
-						<span class="blue t34">AAT Outage Info</span>
-						<p class="red t20">
+						<span class="blue t34">AAT Info</span>
+				<!--	<p class="red t20">
 							Only use if email confirms AAT outage.
 						</p>
 						<div class="spacer"></div>
@@ -2345,6 +2350,7 @@ CCI to <span class="purple t14">confirm tech</span>.
 						<p class="red t18">
 							Once you are in the chat, you will request assistance using ONLY the following templates:
 						</p>
+						-->
 						<p class="red t16">
 							&darr;&darr;  Fill out and copy template &darr;&darr;  
 						</p>
@@ -2561,7 +2567,7 @@ CCI to <span class="purple t14">confirm tech</span>.
 						<p class="white t14">Post the copied template to the skype chat.</p>
 						<div class="aatTempBox">
 							<div class="aatTempTitle">
-								Onsite Needed
+								General Assistance
 							</div> 
 							<table class="aatTable">
 								<tr class="aatTableTr">
@@ -2821,7 +2827,7 @@ function copyAatInfo(ACT){
 	if(ACT == 10){
 		var accnt = document.getElementById("aatOnsiteAcctIn").value;
 		var desk = document.getElementById("aatOnsiteDeskIn").value;
-		outTempFill = 'Onsite Needed';
+		outTempFill = 'General Assist';
 		outTempFill = outTempFill.concat(newl,'Account : ', accnt);
 		outTempFill = outTempFill.concat(newl,'Desk : ', desk);
 	}
@@ -3489,7 +3495,7 @@ let stopwatch = new Stopwatch(
     document.querySelector('.results'));
 </script>
 	<div class="footer">
-		Version 2.5.12.22.31
+		Version 2.5.16.20.22.43
 	</div>
 	</body>
 </html>
