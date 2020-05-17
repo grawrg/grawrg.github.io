@@ -2526,6 +2526,16 @@ CCI to <span class="purple t14">confirm tech</span>.
 								</tr>
 								<tr class="aatTableTr">
 									<td class="aatTableTdL">
+										Modem MAC | STB S/N :
+									</td>
+									<td class="aatTableTdR">
+										<input class="calcOut" style="width:150px;" type="text" placeholder="A1:30:44:BD:6B:01" id="aatSatMacSnIn">
+										
+										</input>		
+									</td>
+								</tr>
+								<tr class="aatTableTr">
+									<td class="aatTableTdL">
 										Desk # :
 									</td>
 									<td class="aatTableTdR">
@@ -2823,8 +2833,10 @@ function copyAatInfo(ACT){
 	if(ACT == 8){
 		var accnt = document.getElementById("aatSatAcctIn").value;
 		var desk = document.getElementById("aatSatDeskIn").value;
+		var macsn = document.getElementById("aatSatMacSnIn").value;
 		outTempFill = 'SAT Tool';
 		outTempFill = outTempFill.concat(newl,'Account : ', accnt);
+		outTempFill = outTempFill.concat(newl,'MAC / SN : ', macsn);
 		outTempFill = outTempFill.concat(newl,'Desk : ', desk);
 	}
 	if(ACT == 9){
@@ -2858,6 +2870,7 @@ function copyAatInfo(ACT){
 	document.getElementById("aatQuarMacIn").value = '';
 	document.getElementById("aatQuarDeskIn").value = '';
 	document.getElementById("aatSatAcctIn").value = '';
+	document.getElementById("aatSatMacSnIn").value = '';
 	document.getElementById("aatSatDeskIn").value = '';
 	document.getElementById("aatSpecAcctIn").value = '';
 	document.getElementById("aatSpecDeskIn").value = '';
@@ -3505,7 +3518,7 @@ let stopwatch = new Stopwatch(
     document.querySelector('.results'));
 </script>
 	<div class="footer">
-		Version 2.5.16.20.23.6
+		Version 2.5.16.20.23.20
 	</div>
 	</body>
 </html>
