@@ -21,15 +21,19 @@ body{
 	padding-left: 0px;
 }
 .NotChrome{
-	top:0;
+	top: 0;
 	left: 0;
-	position: absolute;
-	padding: 200px;
-	width: 1000000px;
-	height: 1000000px;
+	position: fixed;
+	width: 100%;
+	height: 100%;
 	background-color: white;
 	color: black;
 	z-index: 100000;
+}
+.NotChromeText{
+	font-size: 24px;
+	text-align: center;
+	margin-top: 250px;
 }
 .autoWid{
 	width:450px;
@@ -802,7 +806,7 @@ th{
 }
 .ImportantBox{
 	transition: height 1s, width 1s, background-color 1s;
-	transition-delay: .6s;
+	transition-delay: .3s;
 	background-color: #21B7B1;
 	position: fixed;
 	left: 8px;
@@ -883,6 +887,11 @@ th{
 }
 	</style>
 	
+		<div id="NotChrome" class="NotChrome">
+			<p class="NotChromeText">
+				MUST USE GOOGLE CHROME TO RUN THIS
+			</p>
+		</div>  
 	<title>Cheats</title> 
 		<div id="navBar" class="NavBox">
 			<p class="NavSpace"></p>
@@ -2775,14 +2784,23 @@ CCI to <span class="purple t14">confirm tech</span>.
 		<div id="copTemp" class="opWinDiv" style="width:10%">
 			<textarea type="text" value="X" id="myInput" style="width:10%" cols="400" rows="10"></textarea>
 		</div>
-		<div id="NotChrome" class="NotChrome">
-			MUST USE GOOGLE CHROME TO RUN THIS
-		</div>  
 <script>
 function onLoadBody(){
 	if (navigator.userAgent.indexOf("Chrome") !== -1){
 		console.log("ITS JOHNNY");
 		document.getElementById("NotChrome").style.visibility = "hidden";
+	}
+	if (/MSIE 10/i.test(navigator.userAgent)) {
+		document.getElementById("NotChrome").style.visibility = "visible";
+		window.alert('isIE10');
+	}
+	if (/MSIE 9/i.test(navigator.userAgent) || /rv:11.0/i.test(navigator.userAgent)) {
+		document.getElementById("NotChrome").style.visibility = "visible";
+		window.location = 'pages/core/ie.htm';
+	}
+	if (/Edge\/\d./i.test(navigator.userAgent)){
+		document.getElementById("NotChrome").style.visibility = "visible";
+		window.alert('Microsoft Edge');
 	}
 		//var win = window.open(
 			//"https://panorama.charter.com/home", 
@@ -3536,7 +3554,7 @@ let stopwatch = new Stopwatch(
     document.querySelector('.results'));
 </script>
 	<div class="footer">
-		Version 2.5.16.20.23.55
+		Version 2.5.17.20.15.56
 	</div>
 	</body>
 </html>
