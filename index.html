@@ -42,7 +42,17 @@ body{
 	border-width:0px;
 }
 .footer{
-	float:right;
+	color: white;
+	transition: color 4s;
+	font-size: 11px;
+	position: fixed;
+	float: left;
+	bottom: 54px;
+	left: 15px;
+}
+.ImportantBox:Hover .footer{
+	transition: color .3s;
+	color: rgba(0,0,0,0);
 }
 .border1{
 	border: 3px solid green;
@@ -1051,6 +1061,9 @@ th{
 					</td>
 				</tr>
 			</table>
+			<div id="VersionLabel" class="footer">
+				
+			</div>
 		</div>
 	</head>
 	<body onload="onLoadBody()">
@@ -2785,6 +2798,7 @@ CCI to <span class="purple t14">confirm tech</span>.
 			<textarea type="text" value="X" id="myInput" style="width:10%" cols="400" rows="10"></textarea>
 		</div>
 <script>
+var VER = "Version 2.DEV.6";
 function onLoadBody(){
 	if (navigator.userAgent.indexOf("Chrome") !== -1){
 		console.log("ITS JOHNNY");
@@ -2805,6 +2819,8 @@ function onLoadBody(){
 		//var win = window.open(
 			//"https://panorama.charter.com/home", 
 			//"Secure Payment");
+			
+		document.getElementById("VersionLabel").innerHTML = VER;
 		document.getElementById("copTemp").style.visibility = "hidden";
 		document.getElementById("goodAns").readOnly = true;
 		document.getElementById("badAns").readOnly = true;
@@ -3553,9 +3569,6 @@ let stopwatch = new Stopwatch(
     document.querySelector('.stopwatch'),
     document.querySelector('.results'));
 </script>
-	<div class="footer">
-		Version 2.5.17.20.15.56
-	</div>
 	</body>
 </html>
 
