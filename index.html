@@ -898,12 +898,11 @@ th{
 	background-color: #D72222;
 }
 	</style>
-	
-		<div id="NotChrome" class="NotChrome">
-			<p class="NotChromeText">
-				MUST USE GOOGLE CHROME TO RUN THIS
-			</p>
-		</div>  
+	<div id="NotChrome" class="NotChrome">
+		<p class="NotChromeText">
+			<span style="font-size: 142px;">&#9888;</span></br>&#9888; MUST USE GOOGLE CHROME TO RUN THIS &#9888; </br></br> Please reopen in google chrome.</br></br><p style="text-align: center;"id="CurBrowse">Currently Using IE 9</p>
+		</p>
+	</div>  
 	<title>Cheats</title> 
 		<div id="navBar" class="NavBox">
 			<p class="NavSpace"></p>
@@ -2800,23 +2799,24 @@ CCI to <span class="purple t14">confirm tech</span>.
 			<textarea type="text" value="X" id="myInput" style="width:10%" cols="400" rows="10"></textarea>
 		</div>
 <script>
-var VER = "Version 2.5.17.20.17.32";
+var VER = "Version 2.DEV.6";
 function onLoadBody(){
 	if (navigator.userAgent.indexOf("Chrome") !== -1){
 		console.log("ITS JOHNNY");
+		document.getElementById("CurBrowse").innerHTML = 'Currently Using Chrome';
 		document.getElementById("NotChrome").style.visibility = "hidden";
 	}
 	if (/MSIE 10/i.test(navigator.userAgent)) {
+		document.getElementById("CurBrowse").innerHTML = 'Currently Using IE 10/11';
 		document.getElementById("NotChrome").style.visibility = "visible";
-		window.alert('isIE10');
 	}
 	if (/MSIE 9/i.test(navigator.userAgent) || /rv:11.0/i.test(navigator.userAgent)) {
+		document.getElementById("CurBrowse").innerHTML = 'Currently Using IE 9';
 		document.getElementById("NotChrome").style.visibility = "visible";
-		window.location = 'pages/core/ie.htm';
 	}
 	if (/Edge\/\d./i.test(navigator.userAgent)){
+		document.getElementById("CurBrowse").innerHTML = 'Currently Using Edge';
 		document.getElementById("NotChrome").style.visibility = "visible";
-		window.alert('Microsoft Edge');
 	}
 		//var win = window.open(
 			//"https://panorama.charter.com/home", 
