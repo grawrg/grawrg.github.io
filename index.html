@@ -1093,11 +1093,11 @@ th{
 										AAT Tool
 									</p>
 								</button>
-							<!--	<button class="button opIndSiz" onclick="opIndFun(12)">
+								<button class="button opIndSiz" onclick="opIndFun(12)">
 									<p class="indLinkGrey">
 										CLU Tool
 									</p>
-								</button> -->
+								</button>
 								<button class="button opIndSiz" onclick="opIndFun(13)">
 									<p class="indLinkGrey">
 										ETD Tickets
@@ -2805,7 +2805,7 @@ CCI to <span class="purple t14">confirm tech</span>.
 			<textarea type="text" value="X" id="myInput" style="width:10%" cols="400" rows="10"></textarea>
 		</div>
 <script>
-var VER = "Version 2.5.17.20.23.30";
+var VER = "Version 2.5.18.20.15.38";
 function onLoadBody(){
 	if (navigator.userAgent.indexOf("Chrome") !== -1){
 		console.log("ITS JOHNNY");
@@ -2942,13 +2942,13 @@ function copyAatInfo(ACT){
 	copyItAatInfo();
 }
 function copyItAatInfo(){
-  document.getElementById("dispAAT").style.backgroundColor = "#3590B2";
-  var copyText = document.getElementById("myInput");
-  copyText.select();
-  document.execCommand("copy");
-  //alert("Copied the text: \n\n" + copyText.value);
-  document.getElementById("myInput").value = "X";
-  setTimeout(goBack, 150);
+	document.getElementById("dispAAT").style.backgroundColor = "#3590B2";
+	var copyText = document.getElementById("myInput");
+	copyText.select();
+	document.execCommand("copy");
+	//alert("Copied the text: \n\n" + copyText.value);
+	document.getElementById("myInput").value = "X";
+	setTimeout(goBack, 150);
 }
 function copyTextInfo(XXE){
 	document.getElementById("copTemp").style.visibility = "visible";
@@ -3400,7 +3400,7 @@ function opIndFun(X){
     var AATTool = window.open("https://sharepointops.charter.com/ops/AAT/VIDTXSanAntonio/SitePages/Home.aspx");
   }
   if (X===12){
-    var CLUTool = window.open("https://chtrgwy.corp.chartercom.com/static/channel-lineup-utility/current/");
+    var CLUTool = window.open("https://gateway.corp.chartercom.com/static/channel-lineup-utility/current/ ");
   }
   if (X===13){
     var ETDTool = window.open("https://corportal.corp.chartercom.com/main/forms/default.aspx?Forms=120");
@@ -3475,7 +3475,7 @@ function winTwo() {
   var Aspect = window.open("https://charter.hosted.aspect-cloud.net/WFO/");
   var Corportal = window.open("http://corportal.corp.chartercom.com/main/reports/default.aspx?reports=135");
   var AATTool = window.open("https://sharepointops.charter.com/ops/AAT/VIDTXSanAntonio/SitePages/Home.aspx");
-  //var CLUTool = window.open("https://chtrgwy.corp.chartercom.com/static/channel-lineup-utility/current/");
+  var CLUTool = window.open("https://gateway.corp.chartercom.com/static/channel-lineup-utility/current/ ");
   var ETDTool = window.open("https://corportal.corp.chartercom.com/main/forms/default.aspx?Forms=120");
   var SupScop = window.open("https://sharepoint.charter.com/ops/CCTools/SoSTool/SitePages/Home.aspx");
   var UXID = window.open("https://uxid-nce.corp.chartercom.com/");
