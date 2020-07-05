@@ -2380,389 +2380,393 @@ CCI to <span class="purple t14">confirm tech</span>.
 					
 					
 <div class="hidden_content">
-	<p class="red t20">
-		Only use if email confirms AAT outage.
-	</p>
-	<div class="spacer"></div>
-	
-	<p class="blue t28">
-		Pick your section : 
-	</p>
-	<p class="white t14">
-		Your seat letter will determine which Zone you fall into.  
-		This will also determine which of the 3 Persistent Chats you will go into for assistance.
-	</p>
-	<p class="red t16">
-		&darr;&darr;  Click to quick copy group name &darr;&darr;  
-	</p>
-	<button class="button copNote othButs" style="text-align:center;" onclick="copyAatInfo(1)">
-		San Antonio Agent Assist Sections A-F
-	</button>
-	<button class="button copNote othButs" style="text-align:center;" onclick="copyAatInfo(2)">
-		San Antonio Agent Assist Sections G-L
-	</button>
-	<button class="button copNote othButs" style="text-align:center;" onclick="copyAatInfo(3)">
-		San Antonio Agent Assist Sections M-T
-	</button>
-	</br></br>
-	<div class="green t24">
-		How to find the Persistent Chats
-	</div>
-	<p class="texLeft white t14">
-		1. Open Skype </br>
-		2. Click the Chat Rooms Icon(Highlighted in Yellow Below) </br>
-		3. Type the name of the room in the “Find someone or a room”</br>
-		4. (Optional) You may right click the room once found and select “Follow this room” for easier access in the future.</br>
-	</p>
-	<div class="spacer"></div>
-	<p class="blue t28">
-		Pick required template : 
-	</p>
-	<p class="red t18">
-		Once you are in the chat, you will request assistance using ONLY the following templates:
-	</p>
-	
-	<p class="red t16">
-		&darr;&darr;  Fill out and copy template &darr;&darr;  
-	</p>
-	<p class="white t14">
-		Post the copied template to the skype chat.
-	</p>
-	
-	<div class="aatTempBox">
-		<div class="aatTempTitle">
-			Other Active Customer
-		</div> 
-		<table class="aatTable">
-			<tr class="aatTableTr">
-				<td class="aatTableTdL">
-					Account # : 
-				</td>
-				<td class="aatTableTdR">
-					<input class="calcOut" style="width:150px;" type="text" placeholder="7645107495092715" id="aatOacAcctIn">
-					
-					</input>		
-				</td>
-			</tr>
-			<tr class="aatTableTr">
-				<td class="aatTableTdL">
-					Desk # : 
-				</td>
-				<td class="aatTableTdR">
-					<input class="calcOut" style="width:30px;" type="text" placeholder="A0" id="aatOacDeskIn">
-					
-					</input>
-				</td>
-			</tr>
-		</table>
-		<p class="outTempSty" style="height:35px; padding:10px; text-align:left; margin: auto;">
-			<button class="button calcBut" onclick="copyAatInfo(6)">
-				<p class="white indLinkGrey">Copy It</p>
+			   
+			   
+			    <!--- AAT PROCESS VIA CHAT/VOICE -->
+			   
+			   
+			<p class="red t20">
+				Only use if email confirms AAT outage.
+			</p>
+			<div class="spacer"></div>
+			
+			<p class="blue t28">
+				Pick your section : 
+			</p>
+			<p class="white t14">
+				Your seat letter will determine which Zone you fall into.  
+				This will also determine which of the 3 Persistent Chats you will go into for assistance.
+			</p>
+			<p class="red t16">
+				&darr;&darr;  Click to quick copy group name &darr;&darr;  
+			</p>
+			<button class="button copNote othButs" style="text-align:center;" onclick="copyAatInfo(1)">
+				San Antonio Agent Assist Sections A-F
 			</button>
-		</p>
-	</div>
-	<p class="white t14">Post the copied template to the skype chat.</p>
-	<div class="aatTempBox">
-		<div class="aatTempTitle">
-			Quarantine Removal
-		</div> 
-		<table class="aatTable">
-			<tr class="aatTableTr">
-				<td class="aatTableTdL">
-					Modem MAC ID: 
-				</td>
-				<td class="aatTableTdR">
-					<input class="calcOut" style="width:150px;" type="text" placeholder="1F:50:A1:F9:3C:8B" id="aatQuarMacIn">
-					
-					</input>		
-				</td>
-			</tr>
-			<tr class="aatTableTr">
-				<td class="aatTableTdL">
-					Desk # : 
-				</td>
-				<td class="aatTableTdR">
-					<input class="calcOut" style="width:30px;" type="text" placeholder="A0" id="aatQuarDeskIn">
-					
-					</input>
-				</td>
-			</tr>
-		</table>
-		<p class="outTempSty" style="height:35px; padding:10px; text-align:left; margin: auto;">
-			<button class="button calcBut" onclick="copyAatInfo(7)">
-				<p class="white indLinkGrey">Copy It</p>
+			<button class="button copNote othButs" style="text-align:center;" onclick="copyAatInfo(2)">
+				San Antonio Agent Assist Sections G-L
 			</button>
-		</p>
-	</div>
-	<p class="white t14">Post the copied template to the skype chat.</p>
-	<div class="aatTempBox">
-		<div class="aatTempTitle">
-			SAT Tool
-		</div> 
-		<table class="aatTable">
-			<tr class="aatTableTr">
-				<td class="aatTableTdL">
-					Account # :
-				</td>
-				<td class="aatTableTdR">
-					<input class="calcOut" style="width:150px;" type="text" placeholder="7645107495092715" id="aatSatAcctIn">
-					
-					</input>		
-				</td>
-			</tr>
-			<tr class="aatTableTr">
-				<td class="aatTableTdL">
-					Modem MAC | STB S/N :
-				</td>
-				<td class="aatTableTdR">
-					<input class="calcOut" style="width:150px;" type="text" placeholder="A1:30:44:BD:6B:01" id="aatSatMacSnIn">
-					
-					</input>		
-				</td>
-			</tr>
-			<tr class="aatTableTr">
-				<td class="aatTableTdL">
-					Desk # :
-				</td>
-				<td class="aatTableTdR">
-					<input class="calcOut" style="width:30px;" type="text" placeholder="A0" id="aatSatDeskIn">
-					
-					</input>
-				</td>
-			</tr>
-		</table>
-		<p class="outTempSty" style="height:35px; padding:10px; text-align:left; margin: auto;">
-			<button class="button calcBut" onclick="copyAatInfo(8)">
-				<p class="white indLinkGrey">Copy It</p>
+			<button class="button copNote othButs" style="text-align:center;" onclick="copyAatInfo(3)">
+				San Antonio Agent Assist Sections M-T
 			</button>
-		</p>
-	</div>
-	<p class="white t14">Post the copied template to the skype chat.</p>
-	<div class="aatTempBox">
-		<div class="aatTempTitle">
-			Spec Guide Code
-		</div> 
-		<table class="aatTable">
-			<tr class="aatTableTr">
-				<td class="aatTableTdL">
-					Account # :
-				</td>
-				<td class="aatTableTdR">
-					<input class="calcOut" style="width:150px;" type="text" placeholder="7645107495092715" id="aatSpecAcctIn">
-					
-					</input>		
-				</td>
-			</tr>
-			<tr class="aatTableTr">
-				<td class="aatTableTdL">
-					Desk # :
-				</td>
-				<td class="aatTableTdR">
-					<input class="calcOut" style="width:30px;" type="text" placeholder="A0" id="aatSpecDeskIn">
-					
-					</input>
-				</td>
-			</tr>
-		</table>
-		<p class="outTempSty" style="height:35px; padding:10px; text-align:left; margin: auto;">
-			<button class="button calcBut" onclick="copyAatInfo(9)">
-				<p class="white indLinkGrey">Copy It</p>
-			</button>
-		</p>
-	</div>
-	<p class="white t14">Post the copied template to the skype chat.</p>
-	<div class="aatTempBox">
-		<div class="aatTempTitle">
-			General Assistance
-		</div> 
-		<table class="aatTable">
-			<tr class="aatTableTr">
-				<td class="aatTableTdL">
-					Account # :
-				</td>
-				<td class="aatTableTdR">
-					<input class="calcOut" style="width:150px;" type="text" placeholder="7645107495092715" id="aatOnsiteAcctIn">
-					
-					</input>		
-				</td>
-			</tr>
-			<tr class="aatTableTr">
-				<td class="aatTableTdL">
-					Desk # :
-				</td>
-				<td class="aatTableTdR">
-					<input class="calcOut" style="width:30px;" type="text" placeholder="A0" id="aatOnsiteDeskIn">
-					
-					</input>
-				</td>
-			</tr>
-		</table>
-		<p class="outTempSty" style="height:35px; padding:10px; text-align:left; margin: auto;">
-			<button class="button calcBut" onclick="copyAatInfo(10)">
-				<p class="white indLinkGrey">Copy It</p>
-			</button>
-		</p>
-	</div>
-	<p class="white t14">Post the copied template to the skype chat.</p>
+			</br></br>
+			<div class="green t24">
+				How to find the Persistent Chats
+			</div>
+			<p class="texLeft white t14">
+				1. Open Skype </br>
+				2. Click the Chat Rooms Icon(Highlighted in Yellow Below) </br>
+				3. Type the name of the room in the “Find someone or a room”</br>
+				4. (Optional) You may right click the room once found and select “Follow this room” for easier access in the future.</br>
+			</p>
+			<div class="spacer"></div>
+			<p class="blue t28">
+				Pick required template : 
+			</p>
+			<p class="red t18">
+				Once you are in the chat, you will request assistance using ONLY the following templates:
+			</p>
+			
+			<p class="red t16">
+				&darr;&darr;  Fill out and copy template &darr;&darr;  
+			</p>
+			<p class="white t14">
+				Post the copied template to the skype chat.
+			</p>
+			
+			<div class="aatTempBox">
+				<div class="aatTempTitle">
+					Other Active Customer
+				</div> 
+				<table class="aatTable">
+					<tr class="aatTableTr">
+						<td class="aatTableTdL">
+							Account # : 
+						</td>
+						<td class="aatTableTdR">
+							<input class="calcOut" style="width:150px;" type="text" placeholder="7645107495092715" id="aatOacAcctIn">
+							
+							</input>		
+						</td>
+					</tr>
+					<tr class="aatTableTr">
+						<td class="aatTableTdL">
+							Desk # : 
+						</td>
+						<td class="aatTableTdR">
+							<input class="calcOut" style="width:30px;" type="text" placeholder="A0" id="aatOacDeskIn">
+							
+							</input>
+						</td>
+					</tr>
+				</table>
+				<p class="outTempSty" style="height:35px; padding:10px; text-align:left; margin: auto;">
+					<button class="button calcBut" onclick="copyAatInfo(6)">
+						<p class="white indLinkGrey">Copy It</p>
+					</button>
+				</p>
+			</div>
+			<p class="white t14">Post the copied template to the skype chat.</p>
+			<div class="aatTempBox">
+				<div class="aatTempTitle">
+					Quarantine Removal
+				</div> 
+				<table class="aatTable">
+					<tr class="aatTableTr">
+						<td class="aatTableTdL">
+							Modem MAC ID: 
+						</td>
+						<td class="aatTableTdR">
+							<input class="calcOut" style="width:150px;" type="text" placeholder="1F:50:A1:F9:3C:8B" id="aatQuarMacIn">
+							
+							</input>		
+						</td>
+					</tr>
+					<tr class="aatTableTr">
+						<td class="aatTableTdL">
+							Desk # : 
+						</td>
+						<td class="aatTableTdR">
+							<input class="calcOut" style="width:30px;" type="text" placeholder="A0" id="aatQuarDeskIn">
+							
+							</input>
+						</td>
+					</tr>
+				</table>
+				<p class="outTempSty" style="height:35px; padding:10px; text-align:left; margin: auto;">
+					<button class="button calcBut" onclick="copyAatInfo(7)">
+						<p class="white indLinkGrey">Copy It</p>
+					</button>
+				</p>
+			</div>
+			<p class="white t14">Post the copied template to the skype chat.</p>
+			<div class="aatTempBox">
+				<div class="aatTempTitle">
+					SAT Tool
+				</div> 
+				<table class="aatTable">
+					<tr class="aatTableTr">
+						<td class="aatTableTdL">
+							Account # :
+						</td>
+						<td class="aatTableTdR">
+							<input class="calcOut" style="width:150px;" type="text" placeholder="7645107495092715" id="aatSatAcctIn">
+							
+							</input>		
+						</td>
+					</tr>
+					<tr class="aatTableTr">
+						<td class="aatTableTdL">
+							Modem MAC | STB S/N :
+						</td>
+						<td class="aatTableTdR">
+							<input class="calcOut" style="width:150px;" type="text" placeholder="A1:30:44:BD:6B:01" id="aatSatMacSnIn">
+							
+							</input>		
+						</td>
+					</tr>
+					<tr class="aatTableTr">
+						<td class="aatTableTdL">
+							Desk # :
+						</td>
+						<td class="aatTableTdR">
+							<input class="calcOut" style="width:30px;" type="text" placeholder="A0" id="aatSatDeskIn">
+							
+							</input>
+						</td>
+					</tr>
+				</table>
+				<p class="outTempSty" style="height:35px; padding:10px; text-align:left; margin: auto;">
+					<button class="button calcBut" onclick="copyAatInfo(8)">
+						<p class="white indLinkGrey">Copy It</p>
+					</button>
+				</p>
+			</div>
+			<p class="white t14">Post the copied template to the skype chat.</p>
+			<div class="aatTempBox">
+				<div class="aatTempTitle">
+					Spec Guide Code
+				</div> 
+				<table class="aatTable">
+					<tr class="aatTableTr">
+						<td class="aatTableTdL">
+							Account # :
+						</td>
+						<td class="aatTableTdR">
+							<input class="calcOut" style="width:150px;" type="text" placeholder="7645107495092715" id="aatSpecAcctIn">
+							
+							</input>		
+						</td>
+					</tr>
+					<tr class="aatTableTr">
+						<td class="aatTableTdL">
+							Desk # :
+						</td>
+						<td class="aatTableTdR">
+							<input class="calcOut" style="width:30px;" type="text" placeholder="A0" id="aatSpecDeskIn">
+							
+							</input>
+						</td>
+					</tr>
+				</table>
+				<p class="outTempSty" style="height:35px; padding:10px; text-align:left; margin: auto;">
+					<button class="button calcBut" onclick="copyAatInfo(9)">
+						<p class="white indLinkGrey">Copy It</p>
+					</button>
+				</p>
+			</div>
+			<p class="white t14">Post the copied template to the skype chat.</p>
+			<div class="aatTempBox">
+				<div class="aatTempTitle">
+					General Assistance
+				</div> 
+				<table class="aatTable">
+					<tr class="aatTableTr">
+						<td class="aatTableTdL">
+							Account # :
+						</td>
+						<td class="aatTableTdR">
+							<input class="calcOut" style="width:150px;" type="text" placeholder="7645107495092715" id="aatOnsiteAcctIn">
+							
+							</input>		
+						</td>
+					</tr>
+					<tr class="aatTableTr">
+						<td class="aatTableTdL">
+							Desk # :
+						</td>
+						<td class="aatTableTdR">
+							<input class="calcOut" style="width:30px;" type="text" placeholder="A0" id="aatOnsiteDeskIn">
+							
+							</input>
+						</td>
+					</tr>
+				</table>
+				<p class="outTempSty" style="height:35px; padding:10px; text-align:left; margin: auto;">
+					<button class="button calcBut" onclick="copyAatInfo(10)">
+						<p class="white indLinkGrey">Copy It</p>
+					</button>
+				</p>
+			</div>
+			<p class="white t14">Post the copied template to the skype chat.</p>
 	
 
 			    
 			    <!--- AAT PROCESS VIA CHAT/VOICE -->
 			    
 			    
-					<div class="border1">
-					<span class="yellow t20">Please make sure when coming on the board you are specifying a </br>
-					<span class="red t30 undLin">Voice</span> 
-					or 
-					<span class="red t30 undLin">Chat</span> </br>
-					based on the criteria below.</br></span>
-					</div></br>
-					<div class="texLeft" style="margin:auto; width:max-content;">
-						<span class="red t18"> 	
-							&#8225; Do not post Desk numbers or if you are WAH</br>
-							&#8225; Be available - Do not be in "Do Not Disturb"</br>
-							&#8225; Have your account and/or template ready if applicable to your request</br>
-						</span>
+				<div class="border1">
+				<span class="yellow t20">Please make sure when coming on the board you are specifying a </br>
+				<span class="red t30 undLin">Voice</span> 
+				or 
+				<span class="red t30 undLin">Chat</span> </br>
+				based on the criteria below.</br></span>
+				</div></br>
+				<div class="texLeft" style="margin:auto; width:max-content;">
+					<span class="red t18"> 	
+						&#8225; Do not post Desk numbers or if you are WAH</br>
+						&#8225; Be available - Do not be in "Do Not Disturb"</br>
+						&#8225; Have your account and/or template ready if applicable to your request</br>
+					</span>
+				</div>
+				<div class="texLeft yellow t24 undLin" style="margin:10px;">
+					<span class="red t30 undLin">Voice</span> Requests &#151 No template is needed
+				</div>
+
+				<div class="texLeft" style="margin:auto;">
+					<span class="white t18"> 	
+						<span class="red t18">&#164; SAT &#151;</span> Leads are required to verify the customer has attempted to go through the activation portal. We will not just remove a quarantine without asking follow up questions and confirming the customer has done their part.</br></br>
+						<span class="red t18">&#164; Order Entry &#151;</span> You should share your screen once you are with a Lead  so we can help guide you to the resolution. We are here to help you, not do it for you.</br></br>
+						<span class="red t18">&#164; Promotions &#151;</span> Leads are not permitted to reapply promotions to a customer’s account because the promotion ended. You should sell the value of our services to the customer.</br></br>
+						<span class="red t18">&#164; General Questions &#151;</span> Make sure you have used Co-Pilot prior to reaching out with general questions. Leads should be directing you to Co-Pilot and not giving you the answers.</br></br>
+						<span class="red t18">&#164; Troubleshooting &#151;</span> You should have IRIS up and be prepared to share your screen. It is important to choose the correct answers in IRIS to end up with the correct resolution.</br></br>
+						<span class="red t18">&#164; Sup Call &#151;</span> explain the reason for escalation and what steps you have taken to de-escalate.</br></br>
+					</span>
+				</div>
+				<div class="texLeft yellow t24 undLin" style="margin:10px;">
+					<span class="red t30 undLin">Chat</span> requests &#151 Template is required
+				</div>
+
+				<div class="texLeft" style="margin:auto;">
+					<span class="white t22">
+						&#164; Fill out the appropriate template below and click copy.</br>
+						&#164; Paste into skype chat when lead reaches out.</br></br>
+					</span>
+				</div>
+					<div class="aatTempBox">
+						<div class="aatTempTitle">
+							Broken Transfer / Equipment Move
+						</div> 
+						<table class="aatTable">
+							<tr class="aatTableTr">
+								<td class="aatTableTdL">
+									From Account # : 
+								</td>
+								<td class="aatTableTdR">
+									<input class="calcOut" style="width:150px;" type="text" placeholder="7645107003184547" id="aatTransferAcctFromIn">
+									
+									</input>		
+								</td>
+							</tr>
+							<tr class="aatTableTr">
+								<td class="aatTableTdL">
+									To Account # : 
+								</td>
+								<td class="aatTableTdR">
+									<input class="calcOut" style="width:150px;" type="text" placeholder="7645107495092715" id="aatTransferAcctToIn">
+									
+									</input>
+								</td>
+							</tr>
+							<!--
+							<tr class="aatTableTr">
+								<td class="aatTableTdL">
+									Desk # : 
+								</td>
+								<td class="aatTableTdR">
+									<input class="calcOut" style="width:30px;" type="text" placeholder="A0" id="aatTransferDeskIn">
+									
+									</input>
+								</td>
+							</tr>
+							-->
+						</table>
+						<p class="outTempSty" style="height:35px; padding:10px; text-align:left; margin: auto;">
+							<button class="button calcBut" onclick="copyAatInfo(5)">
+								<p class="white indLinkGrey">Copy It</p>
+							</button>
+						</p>
 					</div>
-					<div class="texLeft yellow t24 undLin" style="margin:10px;">
-						<span class="red t30 undLin">Voice</span> Requests &#151 No template is needed
+					<p class="white t14">Post the copied template to the skype chat.</p><div class="aatTempBox">
+						<div class="aatTempTitle">
+							Non-Pay
+						</div> 
+						<table class="aatTable">
+							<tr class="aatTableTr">
+								<td class="aatTableTdL">
+									Account # : 
+								</td>
+								<td class="aatTableTdR">
+									<input class="calcOut" style="width:150px;" type="text" placeholder="7645107495092715" id="aatNonPayAcctIn">
+									
+									</input>		
+								</td>
+							</tr>
+							<!--
+							<tr class="aatTableTr">
+								<td class="aatTableTdL">
+									Desk # : 
+								</td>
+								<td class="aatTableTdR">
+									<input class="calcOut" style="width:30px;" type="text" placeholder="A0" id="aatNonPayDeskIn">
+									
+									</input>
+								</td>
+							</tr>
+							-->
+						</table>
+						<p class="outTempSty" style="height:35px; padding:10px; text-align:left; margin: auto;">
+							<button class="button calcBut" onclick="copyAatInfo(4)">
+								<p class="white indLinkGrey">Copy It</p>
+							</button>
+						</p>
 					</div>
- 
-					<div class="texLeft" style="margin:auto;">
-						<span class="white t18"> 	
-							<span class="red t18">&#164; SAT &#151;</span> Leads are required to verify the customer has attempted to go through the activation portal. We will not just remove a quarantine without asking follow up questions and confirming the customer has done their part.</br></br>
-							<span class="red t18">&#164; Order Entry &#151;</span> You should share your screen once you are with a Lead  so we can help guide you to the resolution. We are here to help you, not do it for you.</br></br>
-							<span class="red t18">&#164; Promotions &#151;</span> Leads are not permitted to reapply promotions to a customer’s account because the promotion ended. You should sell the value of our services to the customer.</br></br>
-							<span class="red t18">&#164; General Questions &#151;</span> Make sure you have used Co-Pilot prior to reaching out with general questions. Leads should be directing you to Co-Pilot and not giving you the answers.</br></br>
-							<span class="red t18">&#164; Troubleshooting &#151;</span> You should have IRIS up and be prepared to share your screen. It is important to choose the correct answers in IRIS to end up with the correct resolution.</br></br>
-							<span class="red t18">&#164; Sup Call &#151;</span> explain the reason for escalation and what steps you have taken to de-escalate.</br></br>
-						</span>
+					<p class="white t14">Post the copied template to the skype chat.</p>
+					<div class="aatTempBox">
+						<div class="aatTempTitle">
+							Supervisor Override
+						</div> 
+						<table class="aatTable">
+							<tr class="aatTableTr">
+								<td class="aatTableTdL">
+									Account # :
+								</td>
+								<td class="aatTableTdR">
+									<input class="calcOut" style="width:150px;" type="text" placeholder="7645107495092715" id="aatSupAcctIn">
+									
+									</input>		
+								</td>
+							</tr>
+							<!--
+							<tr class="aatTableTr">
+								<td class="aatTableTdL">
+									Desk # :
+								</td>
+								<td class="aatTableTdR">
+									<input class="calcOut" style="width:30px;" type="text" placeholder="A0" id="aatSupDeskIn">
+									
+									</input>
+								</td>
+							</tr>
+							-->
+						</table>
+						<p class="outTempSty" style="height:35px; padding:10px; text-align:left; margin: auto;">
+							<button class="button calcBut" onclick="copyAatInfo(11)">
+								<p class="white indLinkGrey">Copy It</p>
+							</button>
+						</p>
 					</div>
-					<div class="texLeft yellow t24 undLin" style="margin:10px;">
-						<span class="red t30 undLin">Chat</span> requests &#151 Template is required
-					</div>
- 
-					<div class="texLeft" style="margin:auto;">
-						<span class="white t22">
-							&#164; Fill out the appropriate template below and click copy.</br>
-							&#164; Paste into skype chat when lead reaches out.</br></br>
-						</span>
-					</div>
-						<div class="aatTempBox">
-							<div class="aatTempTitle">
-								Broken Transfer / Equipment Move
-							</div> 
-							<table class="aatTable">
-								<tr class="aatTableTr">
-									<td class="aatTableTdL">
-										From Account # : 
-									</td>
-									<td class="aatTableTdR">
-										<input class="calcOut" style="width:150px;" type="text" placeholder="7645107003184547" id="aatTransferAcctFromIn">
-										
-										</input>		
-									</td>
-								</tr>
-								<tr class="aatTableTr">
-									<td class="aatTableTdL">
-										To Account # : 
-									</td>
-									<td class="aatTableTdR">
-										<input class="calcOut" style="width:150px;" type="text" placeholder="7645107495092715" id="aatTransferAcctToIn">
-										
-										</input>
-									</td>
-								</tr>
-								<!--
-								<tr class="aatTableTr">
-									<td class="aatTableTdL">
-										Desk # : 
-									</td>
-									<td class="aatTableTdR">
-										<input class="calcOut" style="width:30px;" type="text" placeholder="A0" id="aatTransferDeskIn">
-										
-										</input>
-									</td>
-								</tr>
-								-->
-							</table>
-							<p class="outTempSty" style="height:35px; padding:10px; text-align:left; margin: auto;">
-								<button class="button calcBut" onclick="copyAatInfo(5)">
-									<p class="white indLinkGrey">Copy It</p>
-								</button>
-							</p>
-						</div>
-						<p class="white t14">Post the copied template to the skype chat.</p><div class="aatTempBox">
-							<div class="aatTempTitle">
-								Non-Pay
-							</div> 
-							<table class="aatTable">
-								<tr class="aatTableTr">
-									<td class="aatTableTdL">
-										Account # : 
-									</td>
-									<td class="aatTableTdR">
-										<input class="calcOut" style="width:150px;" type="text" placeholder="7645107495092715" id="aatNonPayAcctIn">
-										
-										</input>		
-									</td>
-								</tr>
-								<!--
-								<tr class="aatTableTr">
-									<td class="aatTableTdL">
-										Desk # : 
-									</td>
-									<td class="aatTableTdR">
-										<input class="calcOut" style="width:30px;" type="text" placeholder="A0" id="aatNonPayDeskIn">
-										
-										</input>
-									</td>
-								</tr>
-								-->
-							</table>
-							<p class="outTempSty" style="height:35px; padding:10px; text-align:left; margin: auto;">
-								<button class="button calcBut" onclick="copyAatInfo(4)">
-									<p class="white indLinkGrey">Copy It</p>
-								</button>
-							</p>
-						</div>
-						<p class="white t14">Post the copied template to the skype chat.</p>
-						<div class="aatTempBox">
-							<div class="aatTempTitle">
-								Supervisor Override
-							</div> 
-							<table class="aatTable">
-								<tr class="aatTableTr">
-									<td class="aatTableTdL">
-										Account # :
-									</td>
-									<td class="aatTableTdR">
-										<input class="calcOut" style="width:150px;" type="text" placeholder="7645107495092715" id="aatSupAcctIn">
-										
-										</input>		
-									</td>
-								</tr>
-								<!--
-								<tr class="aatTableTr">
-									<td class="aatTableTdL">
-										Desk # :
-									</td>
-									<td class="aatTableTdR">
-										<input class="calcOut" style="width:30px;" type="text" placeholder="A0" id="aatSupDeskIn">
-										
-										</input>
-									</td>
-								</tr>
-								-->
-							</table>
-							<p class="outTempSty" style="height:35px; padding:10px; text-align:left; margin: auto;">
-								<button class="button calcBut" onclick="copyAatInfo(11)">
-									<p class="white indLinkGrey">Copy It</p>
-								</button>
-							</p>
-						</div>
-						<p class="white t14">Post the copied template to the skype chat.</p>
-								  
+					<p class="white t14">Post the copied template to the skype chat.</p>		  
 </div>
 				</div>
 			</div>
